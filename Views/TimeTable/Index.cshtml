@@ -1,0 +1,33 @@
+﻿@model Giriraj_digital.Models.InputModel
+
+<script>
+    function calculateTotalHours() {
+        var workingDays = parseInt(document.getElementById("WorkingDays").value) || 0;
+        var subjectsPerDay = parseInt(document.getElementById("SubjectsPerDay").value) || 0;
+        document.getElementById("TotalHours").value = workingDays * subjectsPerDay;
+    }
+</script>
+
+@using (Html.BeginForm("SubmitInput", "TimeTable", FormMethod.Post))
+{
+    <label>Working Days:</label>
+    @Html.TextBoxFor(m => m.WorkingDays, new { @id = "WorkingDays", @oninput = "calculateTotalHours()" })
+    @Html.ValidationMessageFor(m => m.WorkingDays)
+    <br />
+
+    <label>Subjects Per Day:</label>
+    @Html.TextBoxFor(m => m.SubjectsPerDay, new { @id = "SubjectsPerDay", @oninput = "calculateTotalHours()" })
+    @Html.ValidationMessageFor(m => m.SubjectsPerDay)
+    <br />
+
+    <label>Total Subjects:</label>
+    @Html.TextBoxFor(m => m.TotalSubjects)
+    @Html.ValidationMessageFor(m => m.TotalSubjects)
+    <br />
+
+    <label>Total Hours for Week:</label>
+    <input type="text" id="TotalHours" name="TotalHours" readonly />
+    <br />
+
+    <button type="submit">Next</button>
+}

@@ -1,0 +1,83 @@
+﻿@model Giriraj_digital.Models.TimeTableModel
+
+<h2>Allocate Hours for Subjects</h2>
+
+<p>Total Hours for the Week: <strong>@Model.TotalHours</strong></p>
+
+@using (Html.BeginForm("SubmitSubjects", "TimeTable", FormMethod.Post))
+{
+    <label>Total Subjects:</label>
+    <input type="number" id="TotalSubjects" name="TotalSubjects" value="@Model.Subjects.Count" min="1" required oninput="generateSubjectFields()" />
+    <br />
+    <br />
+
+    <table id="subjectsTable">
+        <tr>
+            <th>Subject Name</th>
+            <th>Allocated Hours</th>
+        </tr>
+
+        @for (int i = 0; i < Model.Subjects.Count; i++)
+        {
+            <tr>
+                <td><input type="text" name="Subjects[@i]" value="@Model.Subjects[i]" required oninput="generateHourInputs()" /></td>
+                <td><input type="number" name="SubjectHours[@Model.Subjects[i]]" min="1" required class="hourInput" oninput="validateTotalHours()" /></td>
+            </tr>
+        }
+    </table>
+
+    <p id="errorMessage" style="color: red; display: none;">Total allocated hours must be exactly <strong>@Model.TotalHours</strong></p>
+
+    <button type="submit" id="submitBtn" disabled>Submit</button>
+}
+
+<script>
+    function generateSubjectFields() {
+        var totalSubjects = parseInt(document.getElementById("TotalSubjects").value) || 0;
+        var table = document.getElementById("subjectsTable");
+
+        // Clear existing rows except header
+        table.innerHTML = `<tr>
+            <th>Subject Name</th>
+            <th>Allocated Hours</th>
+        </tr>`;
+
+        for (let i = 0; i < totalSubjects; i++) {
+            let row = table.insertRow(-1);
+            row.innerHTML = `
+                <td><input type="text" name="Subjects[]" required oninput="generateHourInputs()"></td>
+                <td><input type="number" name="SubjectHours[]" min="1" required class="hourInput" oninput="validateTotalHours()"></td>
+            `;
+        }
+
+        validateTotalHours();
+    }
+
+    function generateHourInputs() {
+        document.querySelectorAll('.hourInput').forEach(input => {
+            input.value = "";
+        });
+        validateTotalHours();
+    }
+
+    function validateTotalHours() {
+        var totalHours = @Model.TotalHours;
+        var inputs = document.querySelectorAll('.hourInput');
+        var sum = 0;
+        var allValid = true;
+
+        inputs.forEach(input => {
+            let value = parseInt(input.value) || 0;
+            if (value < 1) allValid = false;
+            sum += value;
+        });
+
+        if (sum === totalHours && allValid) {
+            document.getElementById("submitBtn").disabled = false;
+            document.getElementById("errorMessage").style.display = "none";
+        } else {
+            document.getElementById("submitBtn").disabled = true;
+            document.getElementById("errorMessage").style.display = "block";
+        }
+    }
+</script>

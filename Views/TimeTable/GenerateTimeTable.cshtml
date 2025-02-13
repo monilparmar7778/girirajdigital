@@ -1,0 +1,13 @@
+﻿@model Giriraj_digital.Models.TimeTableModel
+
+<table border="1">
+    @for (int i = 0; i < Model.TimeTable.GetLength(0); i++)
+    {
+        <tr>
+            @for (int j = 0; j < Model.TimeTable.GetLength(1); j++)
+            {
+                <td>@Model.TimeTable[i, j]</td>
+            }
+        </tr>
+    }
+</table>

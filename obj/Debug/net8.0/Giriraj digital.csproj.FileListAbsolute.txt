@@ -1,0 +1,30 @@
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\bin\Debug\net8.0\appsettings.json
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\bin\Debug\net8.0\Giriraj digital.staticwebassets.runtime.json
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\bin\Debug\net8.0\Giriraj digital.exe
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\bin\Debug\net8.0\Giriraj digital.deps.json
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\bin\Debug\net8.0\Giriraj digital.runtimeconfig.json
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\bin\Debug\net8.0\Giriraj digital.dll
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\bin\Debug\net8.0\Giriraj digital.pdb
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\Giriraj digital.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\Giriraj digital.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\Giriraj digital.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\Giriraj digital.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\Giriraj digital.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\Giriraj digital.RazorAssemblyInfo.cache
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\Giriraj digital.RazorAssemblyInfo.cs
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\staticwebassets\msbuild.Giriraj digital.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\staticwebassets\msbuild.build.Giriraj digital.props
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Giriraj digital.props
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Giriraj digital.props
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\scopedcss\bundle\Giriraj digital.styles.css
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\scopedcss\projectbundle\Giriraj digital.bundle.scp.css
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\Giriraj digital.dll
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\refint\Giriraj digital.dll
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\Giriraj digital.pdb
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\Giriraj digital.genruntimeconfig.cache
+C:\Users\LENOVO\source\repos\Giriraj digital\Giriraj digital\obj\Debug\net8.0\ref\Giriraj digital.dll
